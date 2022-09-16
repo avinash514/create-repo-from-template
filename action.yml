@@ -9,6 +9,10 @@ inputs:
     description: 'Organization admin token with admin:org scope'
     required: true
     default: ''
+  template-repo-name:
+    description: 'Template Repo To create repo from'
+    required: true
+    default: ''
 outputs:
   repo-url: # change this as needed
     description: 'URL of the created repository'
