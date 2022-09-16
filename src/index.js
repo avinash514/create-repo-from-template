@@ -9,7 +9,7 @@ var createRepoData = JSON.stringify(
   {
     "name":targetRepoName,
     "private":true,
-    "visibility":"private"
+    "description" : "Created Repo from Template"
   }
 );
 const targetOrgName = github.context.payload.repository.owner.login;
@@ -19,7 +19,7 @@ var config = {
   url: 'https://api.github.com/repos/'+targetOrgName+'/'+templateRepoName+'/generate',
   headers: { 
     'Accept': 'application/vnd.github.v3+json', 
-    'Authorization': 'token '+ghToken, 
+    'Authorization': ghToken, 
     'Content-Type': 'application/json'
   },
   data : createRepoData
