@@ -16,7 +16,7 @@ const targetOrgName = github.context.payload.repository.owner.login;
 
 var config = {
   method: 'post',
-  url: 'https://api.github.com/repos/'+targetOrgName+'/'+templateRepoName+'/generate,
+  url: 'https://api.github.com/repos/'+targetOrgName+'/'+templateRepoName+'/generate',
   headers: { 
     'Accept': 'application/vnd.github.v3+json', 
     'Authorization': 'token '+ghToken, 
