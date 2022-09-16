@@ -33,7 +33,7 @@ jobs:
         with:
           repo-name: "avinash-test"
           org-admin-token: '${{ secrets.ORG_ADMIN_TOKEN }}'
-          template-repo-name: "avinash-template-repo"
+          template-repo-name: "MavenExample-1"
       - name: Log URL to the repo
         run: echo "The new repo is ${{ steps.create-repo.outputs.repo-url }}"
      
