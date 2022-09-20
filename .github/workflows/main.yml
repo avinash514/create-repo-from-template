@@ -34,6 +34,9 @@ jobs:
           repo-name: "avinash-test"
           org-admin-token: '${{ secrets.ORG_ADMIN_TOKEN }}'
           template-repo-name: "MavenExample-1"
+          owner: 'avinash514org'
+          description: 'Created from Templet Repo'
+          include_all_branches: true
       - name: Log URL to the repo
         run: echo "The new repo is ${{ steps.create-repo.outputs.repo-url }}"
      
